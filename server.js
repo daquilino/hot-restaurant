@@ -65,7 +65,7 @@ app.post("/api/new", function(req, res) {
   console.log("new was hit");
   var newReservation = req.body;
 
-  if(tables.length < 4)
+  if(tables.length < 5)
   {
     tables.push(newReservation);
     console.log("reservation pushed to tables");
